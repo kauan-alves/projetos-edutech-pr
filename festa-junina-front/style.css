@@ -1,0 +1,181 @@
+/*Fonte, cor da página e cor de seleção de texto*/
+body {
+   font-family: 'Quicksand', sans-serif;
+   background: #ffef96;
+}
+
+::selection {
+   background: #ae00ff;
+   color: #ffffff;
+}
+
+/*Cabeçalho*/
+header {
+   background: url(https://www.bates.edu/wordpress/files/2016/07/gradient6.jpg);
+   padding: 20px 0;
+}
+
+.caixa {
+   position: relative;
+   width: 940px;
+   height: 80px;
+   margin: 0 auto;
+}
+
+nav {
+   position: absolute;
+   top: 25px;
+   right: 0%;
+}
+
+nav li {
+   display: inline;
+   margin: 0 0 0 15px;
+}
+
+nav a {
+   text-transform: uppercase;
+   color: #000000;
+   font-weight: bold;
+   font-size: 20px;
+   text-decoration: none;
+}
+
+nav a:hover {
+   color: #ff0000;
+   text-decoration: underline;
+}
+
+nav a:active {
+   color: #ffffff;
+}
+
+/*Rodapé*/
+footer {
+   text-align: center;
+   background: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-light-yellow-minimalist-background-image_257954.jpg);
+   padding: 30px 0;
+   font-size: 18px;
+   font-weight: lighter;
+   font-style: italic;
+   color: #000000;
+}
+
+.imagem-rodape {
+   height: 120px;
+   width: 120px;
+   padding: 15px;
+}
+
+/*Títulos, descrições*/
+.titulo-principal {
+   text-align: center;
+   font-size: 26px;
+   font-weight: bold;
+   padding: 30px 0 30px 0;
+}
+
+.descricao {
+   text-align: center;
+   margin: 10px;
+   font-size: 20px;
+}
+
+/*Início*/
+.lista-caracteristicas li {
+   font-size: 20px;
+   padding: 10px 0 10px 15px;
+}
+
+/*História*/
+.mapa {
+   padding: 30px 0 30px 300px;
+   width: 50%;
+}
+
+/*Receitas*/
+.titulo-receita {
+   text-align: center;
+   font-weight: bold;
+   font-size: 22px;
+   padding: 30px;
+}
+
+.titulo-ingredientes {
+   color: #ff1100;
+   font-weight: bold;
+   padding: 15px;
+   font-size: 20px;
+}
+
+.titulo-modo-preparo {
+   color: #ae00ff;
+   font-weight: bold;
+   padding: 15px;
+   font-size: 20px;
+}
+
+.ingredientes {
+   margin: 20px 0 0 20px;
+   font-size: 18px;
+   display: inline-block;
+}
+
+.ingredientes li {
+   padding: 20px 0 0 0;
+}
+
+.modo-preparo {
+   margin: 20px 0 0 20px;
+   padding: 30px;
+   font-size: 18px;
+}
+
+.modo-preparo li {
+   padding: 20px 0 0 0;
+}
+
+.imagem-receita {
+   display: inline-block;
+   width: 300px;
+   height: 250px;
+   padding: 20px 0 0 100px;
+}
+/*Danças*/
+
+.titulo-dancas {
+   padding: 20px;
+   text-align: center;
+   font-size: 24px;
+   font-weight: bold;
+   color: #ff006a;
+}
+
+.subtitulo {
+   color: #0804ff;
+   text-align: center;
+   font-size: 22px;
+   padding: 15px;
+}
+
+.imagem-dancas {
+   margin: 5px 0 20px 350px;
+   width: 600px;
+   height: 350px;
+}
+
+.dancas-caracteristicas {
+   display: inline-block;
+   font-size: 22px;
+}
+
+.dancas-caracteristicas li {
+   padding: 10px 0;
+   margin: 0 0 0 20px;
+}
+
+.imagem-caracteristicas {
+   display: inline-block;
+   width: 12%;
+   padding: 20px;
+}

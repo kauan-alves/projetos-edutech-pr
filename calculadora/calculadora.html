@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <title>Calculadora</title>
+   </head>
+   <body bgcolor="#ADD8E6">
+      <h1 style="text-align: center">Calculadora</h1>
+      <script>
+         function pularLinha() {
+            document.write('<br>');
+         }
+
+         function escrever(frase) {
+            document.write(frase);
+         }
+
+         var nome = prompt('Qual é o seu nome?');
+         var operacao = prompt(
+            'Qual operação deseja realizar? \n 1- Adição\n 2- Subtração\n 3- Multiplicação\n 4- Divisão'
+         );
+
+         //adição
+         if (operacao == 1) {
+            var num1 = parseInt(prompt('Digite um número'));
+            var num2 = parseInt(prompt('Digite mais um número'));
+            var resultado = num1 + num2;
+         }
+
+         //subtração
+         if (operacao == 2) {
+            var num1 = parseInt(prompt('Digite um número'));
+            var num2 = parseInt(prompt('Digite mais um número'));
+            var resultado = num1 - num2;
+         }
+
+         //multiplicação
+         if (operacao == 3) {
+            var num1 = parseInt(prompt('Digite um número'));
+            var num2 = parseInt(prompt('Digite mais um número'));
+            var resultado = num1 * num2;
+         }
+
+         //divisão
+         if (operacao == 4) {
+            var num1 = parseInt(prompt('Digite um número'));
+            var num2 = parseInt(prompt('Digite mais um número'));
+            var resultado = num1 / num2;
+         }
+
+         if (operacao > 0 && operacao < 5) {
+            escrever(nome + ', o resultado da operação é ' + resultado);
+         } else {
+            escrever(nome + ', a operação escolhida não existe');
+         }
+      </script>
+   </body>
+</html>

@@ -1,0 +1,40 @@
+<meta charset="UTF-8" />
+
+<h2 style="text-align: center">Calculadora de média aritmética</h2>
+
+<script>
+   function pulaLinha() {
+      document.write('<br>');
+   }
+
+   function exibir(frase) {
+      document.write(frase);
+   }
+
+   var quantidade = parseInt(prompt('Digite a quantidade de notas'));
+   var num = 1;
+   var totalNotas = 0;
+
+   while (num <= quantidade) {
+      var nota = parseInt(prompt('Digite sua nota'));
+      totalNotas = totalNotas + nota;
+      num++;
+   }
+
+   var mediaNotas = totalNotas / quantidade;
+
+   exibir('A média das notas é ' + mediaNotas);
+   pulaLinha();
+
+   if (mediaNotas >= 70) {
+      exibir('Você está aprovado!');
+   }
+
+   if (mediaNotas <= 50) {
+      exibir('Você está reprovado');
+   }
+
+   if (mediaNotas > 50 && mediaNotas < 70) {
+      exibir('Você está aprovado, mas precisa melhorar suas notas!');
+   }
+</script>

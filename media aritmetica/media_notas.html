@@ -1,40 +1,55 @@
-<meta charset="UTF-8" />
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Média de notas</title>
+      <link rel="stylesheet" href="reset.css" />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <script>
+         function verificar() {
+            var nota1 = document.getElementById('caixa1').value;
+            nota1 = parseInt(nota1);
 
-<h2 style="text-align: center">Calculadora de média aritmética</h2>
+            var nota2 = document.getElementById('caixa2').value;
+            nota2 = parseInt(nota2);
 
-<script>
-   function pulaLinha() {
-      document.write('<br>');
-   }
+            var nota3 = document.getElementById('caixa3').value;
+            nota3 = parseInt(nota3);
 
-   function exibir(frase) {
-      document.write(frase);
-   }
+            var total = (nota1 + nota2 + nota3) / 3;
 
-   var quantidade = parseInt(prompt('Digite a quantidade de notas'));
-   var num = 1;
-   var totalNotas = 0;
+            if (total < 60) {
+               var aviso = ', você está abaixo da média!';
+            }
 
-   while (num <= quantidade) {
-      var nota = parseInt(prompt('Digite sua nota'));
-      totalNotas = totalNotas + nota;
-      num++;
-   }
+            if (total > 60) {
+               var aviso = ', você está acima da média!';
+            }
 
-   var mediaNotas = totalNotas / quantidade;
+            if (total == 60) {
+               var aviso = ', você está na média ';
+            }
+            alert('Sua média é ' + total + aviso);
+         }
+      </script>
 
-   exibir('A média das notas é ' + mediaNotas);
-   pulaLinha();
+      <h1 class="titulo">Calculadora de média de notas</h1>
+      <label class="caixa">
+         <h2 class="texto-nota">Digite a 1° nota</h2>
+         <input type="number" id="caixa1" class="caixa-numero" />
+         <h2 class="texto-nota">Digite a 2° nota</h2>
+         <input type="number" id="caixa2" class="caixa-numero" />
+         <h2 class="texto-nota">Digite a 3° nota</h2>
+         <input type="number" id="caixa3" class="caixa-numero" />
+      </label>
 
-   if (mediaNotas >= 70) {
-      exibir('Você está aprovado!');
-   }
-
-   if (mediaNotas <= 50) {
-      exibir('Você está reprovado');
-   }
-
-   if (mediaNotas > 50 && mediaNotas < 70) {
-      exibir('Você está aprovado, mas precisa melhorar suas notas!');
-   }
-</script>
+      <div class="button-container">
+         <button type="button" id="button" class="button" value="Verificar" onclick="verificar()">
+            <h2 class="texto-nota">Verificar</h2>
+         </button>
+      </div>
+   </body>
+</html>
